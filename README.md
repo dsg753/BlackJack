@@ -35,3 +35,32 @@ Features
 Requirements
 
 This program requires Python 3.x and the random library, which is pre-installed with Python.
+
+Game Flow
+
+  The game starts with a balance of $1000.
+    For each hand, place a bet, receive cards, and make decisions.
+    The game provides prompts for actions (Hit, Stand, or Double Down).
+    The dealer’s actions follow after the player completes their turn.
+    At the end of each hand, the game displays statistics and your balance.
+    The game ends when the player chooses not to play again or runs out of funds.
+
+Statistics and Balance Tracking
+
+The simulator tracks key statistics for each session:
+
+  Games Played: Total hands played.
+    Player Wins / Dealer Wins: Counts of hands won by the player and the dealer.
+    Ties: Hands where the player and dealer had the same total.
+    Busts: Separate counts for player and dealer busts.
+    Player Balance: Updated in real-time based on wins and losses.
+
+The statistics display after each round and upon game exit, allowing players to review their performance and balance over the session.
+
+File Structure
+
+  blackjack_simulator.py: Main script to run the Blackjack game, including core game logic, betting system, and game statistics.
+
+License
+
+This project is licensed under the MIT License, allowing open and free usage with credit to the author.
